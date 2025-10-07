@@ -61,9 +61,9 @@ export const MealCategory = ({ handleAdd, handleRemove, cart }) => {
         >
           <img
             src={e.strMealThumb}
-            className="max-w-[300px] w-[90%] hover:scale-120 transition mb-10 rounded-xl mx-auto"
+            className="max-w-[300px] w-[90%] hover:scale-120 transition rounded-xl mx-auto"
           />
-          <p className="text-2xl w-[90%]">{e.strMeal}</p>
+          <p className="text-2xl w-[90%] mt-10">{e.strMeal}</p>
 
           <Link to={`/recipe/${e.idMeal}`} className="w-[90%] mx-auto mt-10">
             <button className="bg-yellow-300 w-full mx-auto rounded p-3 hover:bg-yellow-500 hover:text-white transition hover:translate-y-[-5px] hover:scale-110">
