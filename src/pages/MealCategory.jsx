@@ -53,7 +53,7 @@ export const MealCategory = ({ handleAdd, handleRemove, cart }) => {
   }
 
   return (
-    <div className="flex flex-wrap p-10 justify-center max-w-6xl mx-auto w-[90%] gap-10">
+    <div className="flex flex-wrap p-10 justify-center max-w-6xl mx-auto w-[90%] gap-10 mt-20 md:mt-0">
       {categories?.map((e) => (
         <div
           key={e.idMeal}
