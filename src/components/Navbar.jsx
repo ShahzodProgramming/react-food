@@ -14,8 +14,8 @@ const Navbar = ({ setDrawer }) => {
         </Link>
         <div className="flex gap-4">
           <button
-            className="border-2 border-orange-500 p-2"
-            onClick={() => setDrawer(true)}
+            className="border-2 border-orange-500 p-2 hover:rotate-10 transition"
+            onClick={() => setDrawer(true)} 
           >
             🛒
           </button>
