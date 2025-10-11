@@ -59,10 +59,12 @@ export const MealCategory = ({ handleAdd, handleRemove, cart }) => {
           key={e.idMeal}
           className="shadow-xl p-5 flex flex-col max-w-[300px]  relative rounded"
         >
-          <img
-            src={e.strMealThumb}
-            className="max-w-[300px] w-[90%] hover:scale-120 transition rounded-xl mx-auto"
-          />
+          <Link to={`/recipe/${e.idMeal}`}>
+            <img
+              src={e.strMealThumb}
+              className="max-w-[300px] w-[90%] hover:scale-120 transition rounded-xl mx-auto"
+            />
+          </Link>
           <p className="text-2xl w-[90%] mt-10">{e.strMeal}</p>
 
           <Link to={`/recipe/${e.idMeal}`} className="w-[90%] mx-auto mt-10">
